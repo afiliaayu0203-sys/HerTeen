@@ -1,0 +1,1819 @@
+/* =======================
+   HerTeen STYLE
+======================= */
+
+/* =====================================
+   1. ROOT & GLOBAL
+===================================== */
+
+:root{
+
+--primary:#163A5F;
+
+--secondary:#F28C28;
+
+--light:#F8FAFC;
+
+--pink:#FCE4EC;
+
+}
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
+font-family:'Poppins',sans-serif;
+
+}
+
+body{
+
+background:var(--light);
+
+}
+
+/* =====================================
+   2. NAVBAR
+===================================== */
+/* ============================
+   NAVBAR ACTIVE
+============================ */
+
+.navbar .nav-link{
+
+color:rgba(255,255,255,.75);
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.navbar .nav-link:hover{
+
+color:#5b0f0f;
+
+}
+
+.navbar .nav-link.active{
+
+color:#5b0f0f;
+
+font-weight:700;
+
+position:relative;
+
+}
+
+.navbar .nav-link.active::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+bottom:-6px;
+
+width:100%;
+
+height:3px;
+
+background:#F28C28;
+
+border-radius:20px;
+
+}
+/* =====================================
+   3. HERO
+===================================== */
+
+.hero{
+
+padding-top:120px;
+
+padding-bottom:80px;
+
+min-height:100vh;
+
+display:flex;
+
+align-items:center;
+
+background:linear-gradient(
+135deg,
+#ffffff,
+#FCE4EC
+);
+
+}
+
+.hero h1{
+
+font-size:55px;
+
+font-weight:700;
+
+color:var(--primary);
+
+margin-bottom:25px;
+
+}
+
+.hero p{
+
+font-size:20px;
+
+line-height:1.8;
+
+margin-bottom:30px;
+
+}
+
+.btn-warning{
+
+background:var(--secondary);
+
+border:none;
+
+padding:15px 35px;
+
+border-radius:50px;
+
+font-weight:600;
+
+}
+
+.btn-warning:hover{
+
+transform:translateY(-4px);
+
+transition:.3s;
+
+}
+
+.hero-image{
+
+max-width:500px;
+
+animation:float 4s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+/*========================
+STATISTIK
+========================*/
+
+.stats-section{
+
+padding:70px 0;
+
+background:#163A5F;
+
+}
+
+.stat-box{
+
+background:rgba(255,255,255,.08);
+
+padding:35px;
+
+border-radius:20px;
+
+color:white;
+
+transition:.3s;
+
+backdrop-filter:blur(10px);
+
+}
+
+.stat-box:hover{
+
+transform:translateY(-10px);
+
+background:#F28C28;
+
+}
+
+.stat-box i{
+
+font-size:40px;
+
+margin-bottom:20px;
+
+}
+
+.stat-box h2{
+
+font-size:38px;
+
+font-weight:700;
+
+}
+
+.stat-box p{
+
+font-size:18px;
+
+}
+
+/* =======================
+   MATERI
+======================= */
+
+.materi-section{
+
+padding:100px 0;
+
+background:#ffffff;
+
+}
+
+.section-title{
+
+font-size:42px;
+
+font-weight:700;
+
+color:#163A5F;
+
+margin-bottom:10px;
+
+}
+
+.section-subtitle{
+
+font-size:18px;
+
+color:#777;
+
+margin-bottom:40px;
+
+}
+
+.materi-card{
+
+background:white;
+
+padding:35px;
+
+border-radius:25px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.35s;
+
+height:100%;
+
+text-align:center;
+
+cursor:pointer;
+
+}
+
+.materi-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 35px rgba(0,0,0,.15);
+
+}
+
+.icon-circle{
+
+width:90px;
+
+height:90px;
+
+background:#FCE4EC;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:42px;
+
+margin:auto;
+
+margin-bottom:25px;
+
+transition:.3s;
+
+}
+
+.materi-card:hover .icon-circle{
+
+transform:rotate(10deg) scale(1.15);
+
+background:#FFE8D2;
+
+}
+
+.materi-card h4{
+
+font-weight:700;
+
+color:#163A5F;
+
+margin-bottom:15px;
+
+}
+
+.materi-card p{
+
+color:#666;
+
+min-height:90px;
+
+}
+
+.btn-card{
+
+display:inline-flex;
+
+align-items:center;
+
+gap:10px;
+
+text-decoration:none;
+
+background:#163A5F;
+
+color:white;
+
+padding:12px 28px;
+
+border-radius:50px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.btn-card:hover{
+
+background:#F28C28;
+
+color:white;
+
+}
+
+/*============================
+FEATURE
+=============================*/
+
+.features{
+
+background:#F8FAFC;
+
+}
+
+.feature-box{
+
+background:white;
+
+padding:40px;
+
+border-radius:25px;
+
+text-align:center;
+
+height:100%;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.feature-box:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 35px rgba(0,0,0,.15);
+
+}
+
+.feature-box i{
+
+font-size:55px;
+
+color:#F28C28;
+
+margin-bottom:20px;
+
+}
+
+.feature-box h4{
+
+font-weight:700;
+
+margin-bottom:15px;
+
+color:#163A5F;
+
+}
+
+.feature-box p{
+
+color:#666;
+
+line-height:1.8;
+
+}
+
+/*============================
+FOOTER
+=============================*/
+
+.footer{
+
+background:#163A5F;
+
+color:white;
+
+padding:50px 0;
+
+}
+
+.footer hr{
+
+border-color:rgba(255,255,255,.3);
+
+}
+
+/*====================================================
+            HALAMAN MENSTRUASI
+====================================================*/
+
+/* HERO */
+
+.hero-materi{
+    background:linear-gradient(135deg,#FFF6F8,#FFE9F0);
+    padding:90px 0;
+}
+
+.hero-materi .badge{
+    font-size:15px;
+    padding:8px 16px;
+    border-radius:30px;
+}
+
+.hero-materi h1{
+    font-size:54px;
+    font-weight:700;
+    color:#163A5F;
+    margin-bottom:20px;
+}
+
+.hero-materi p{
+    font-size:18px;
+    line-height:1.8;
+    color:#555;
+}
+
+.hero-materi img{
+    max-width:100%;
+    animation:float 4s ease-in-out infinite;
+}
+
+/* JUDUL SECTION */
+
+.section-title{
+
+    color:#163A5F;
+
+    font-weight:700;
+
+    font-size:40px;
+
+}
+
+.section-subtitle{
+
+    color:#777;
+
+    font-size:18px;
+
+}
+
+/*============================
+ACCORDION
+============================*/
+
+.accordion-item{
+
+    border:none;
+
+    margin-bottom:18px;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.accordion-button{
+
+    background:white;
+
+    font-weight:600;
+
+    font-size:18px;
+
+    padding:22px;
+
+}
+
+.accordion-button:not(.collapsed){
+
+    background:#163A5F;
+
+    color:white;
+
+}
+
+.accordion-button:focus{
+
+    box-shadow:none;
+
+}
+
+.accordion-body{
+
+    font-size:17px;
+
+    line-height:1.9;
+
+    color:#555;
+
+}
+
+.accordion-body ul{
+
+    margin-top:15px;
+
+}
+
+.accordion-body li{
+
+    margin-bottom:10px;
+
+}
+
+/*============================
+BUTTON
+============================*/
+
+.btn-warning{
+
+    background:#F28C28;
+
+    border:none;
+
+    padding:14px 34px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-warning:hover{
+
+    background:#d97512;
+
+    transform:translateY(-3px);
+
+}
+
+/*============================
+RESPONSIVE
+============================*/
+
+@media(max-width:992px){
+
+.hero-materi{
+
+text-align:center;
+
+}
+
+.hero-materi h1{
+
+font-size:42px;
+
+}
+
+.hero-materi img{
+
+margin-top:40px;
+
+max-width:320px;
+
+}
+
+.section-title{
+
+font-size:32px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.hero-materi{
+
+padding:70px 0;
+
+}
+
+.hero-materi h1{
+
+font-size:34px;
+
+}
+
+.hero-materi p{
+
+font-size:16px;
+
+}
+
+.cycle-item{
+
+width:100%;
+
+}
+
+.section-title{
+
+font-size:28px;
+
+}
+
+}
+
+/*====================================================
+            KALENDER SIKLUS
+====================================================*/
+
+.table{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.table th{
+
+    background:#163A5F !important;
+
+    color:white;
+
+    font-weight:600;
+
+    padding:18px;
+
+}
+
+.table td{
+
+    height:70px;
+
+    vertical-align:middle;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.table td:hover{
+
+    background:#EAF6FF;
+
+    cursor:pointer;
+
+    transform:scale(1.05);
+
+}
+
+.badge{
+
+    font-size:15px;
+
+    padding:10px 18px;
+
+    border-radius:30px;
+
+}
+
+/*====================================================
+            MITOS VS FAKTA
+====================================================*/
+
+.card{
+
+    border:none;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.15);
+
+}
+
+.card-header{
+
+    font-size:22px;
+
+    font-weight:700;
+
+    padding:18px;
+
+}
+
+.card-body{
+
+    padding:30px;
+
+    line-height:1.9;
+
+    font-size:17px;
+
+}
+
+.card-body p{
+
+    margin-bottom:18px;
+
+}
+
+/*====================================================
+            ALERT TANDA BAHAYA
+====================================================*/
+
+.alert{
+
+    border:none;
+
+    border-radius:25px;
+
+    padding:35px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.alert h3{
+
+    color:#8A4B00;
+
+    font-weight:700;
+
+}
+
+.alert ul{
+
+    margin-top:20px;
+
+}
+
+.alert li{
+
+    margin-bottom:12px;
+
+    line-height:1.8;
+
+}
+
+/*====================================================
+            VIDEO EDUKASI
+====================================================*/
+
+.ratio{
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+/*====================================================
+            DOWNLOAD
+====================================================*/
+
+.btn-primary{
+
+    background:#163A5F;
+
+    border:none;
+
+    padding:14px 35px;
+
+    border-radius:50px;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.btn-primary:hover{
+
+    background:#F28C28;
+
+    transform:translateY(-4px);
+
+}
+
+/*====================================================
+            REFERENSI
+====================================================*/
+
+ol{
+
+    line-height:2;
+
+    font-size:17px;
+
+}
+
+ol li{
+
+    margin-bottom:15px;
+
+}
+
+/*====================================================
+            FOOTER
+====================================================*/
+
+.footer{
+
+    background:#163A5F;
+
+    color:white;
+
+    margin-top:80px;
+
+    padding:60px 20px;
+
+}
+
+.footer h3{
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.footer p{
+
+    margin-bottom:8px;
+
+    opacity:.9;
+
+}
+
+.footer hr{
+
+    border-color:rgba(255,255,255,.25);
+
+}
+
+/*====================================================
+            ANIMASI
+====================================================*/
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+section{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*====================================================
+            RESPONSIVE TAMBAHAN
+====================================================*/
+
+@media(max-width:768px){
+
+.table td{
+
+    height:55px;
+
+    font-size:14px;
+
+}
+
+.card{
+
+    margin-bottom:20px;
+
+}
+
+.summary-box{
+
+    padding:25px;
+
+}
+
+.alert{
+
+    padding:25px;
+
+}
+
+.footer{
+
+    text-align:center;
+
+}
+
+}
+
+/*====================================
+        JAVASCRIPT STYLE
+=====================================*/
+
+
+/* Progress */
+
+#progressBar{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+height:6px;
+
+background:#F28C28;
+
+width:0;
+
+z-index:99999;
+
+}
+
+
+/* Back To Top */
+
+#topBtn{
+
+position:fixed;
+
+bottom:30px;
+
+right:30px;
+
+width:55px;
+
+height:55px;
+
+border:none;
+
+border-radius:50%;
+
+background:#163A5F;
+
+color:white;
+
+font-size:24px;
+
+display:none;
+
+cursor:pointer;
+
+transition:.3s;
+
+z-index:9999;
+
+}
+
+#topBtn:hover{
+
+background:#F28C28;
+
+transform:scale(1.1);
+
+}
+
+
+/* Scroll Animation */
+
+.hidden{
+
+opacity:0;
+
+transform:translateY(50px);
+
+transition:all .8s;
+
+}
+
+.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+
+/* Dark Mode */
+
+.dark{
+
+background:#1c1c1c;
+
+color:white;
+
+}
+
+.dark section{
+
+background:#1c1c1c;
+
+color:white;
+
+}
+
+.dark .card{
+
+background:#2d2d2d;
+
+color:white;
+
+}
+
+.dark .accordion-button{
+
+background:#2d2d2d;
+
+color:white;
+
+}
+
+.dark .accordion-body{
+
+background:#2d2d2d;
+
+color:white;
+
+}
+
+
+/* Loading */
+
+.loaded{
+
+animation:fadePage .8s;
+
+}
+
+@keyframes fadePage{
+
+from{
+
+opacity:0;
+
+}
+
+to{
+
+opacity:1;
+
+}
+
+}
+
+/*============================
+MATERI NAVIGATION
+============================*/
+
+.materi-navigation{
+
+margin-top:60px;
+
+}
+
+.nav-card{
+
+background:#ffffff;
+
+border-radius:20px;
+
+padding:25px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+gap:20px;
+
+}
+
+.nav-btn{
+
+display:flex;
+
+align-items:center;
+
+gap:12px;
+
+padding:14px 24px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.nav-prev{
+
+background:#EAF2FB;
+
+color:#163A5F;
+
+}
+
+.nav-next{
+
+background:#163A5F;
+
+color:white;
+
+}
+
+.nav-btn:hover{
+
+transform:translateY(-3px);
+
+}
+
+.nav-prev:hover{
+
+background:#D4E6FA;
+
+}
+
+.nav-next:hover{
+
+background:#F28C28;
+
+color:white;
+
+}
+
+@media(max-width:768px){
+
+.nav-card{
+
+flex-direction:column;
+
+}
+
+.nav-btn{
+
+width:100%;
+
+justify-content:center;
+
+}
+
+}
+
+/*============================
+KALKULATOR
+============================*/
+
+#resultSection .card{
+
+border-radius:20px;
+
+}
+
+#resultSection h5{
+
+font-weight:700;
+
+margin-bottom:15px;
+
+}
+
+#resultSection p{
+
+font-size:20px;
+
+font-weight:600;
+
+color:#163A5F;
+
+}
+
+#tipsSection .alert{
+
+border-left:6px solid #198754;
+
+border-radius:15px;
+
+}
+
+#disclaimerSection .alert{
+
+border-left:6px solid #ffc107;
+
+border-radius:15px;
+
+}
+
+#resetBtn{
+
+padding:12px 35px;
+
+border-radius:50px;
+
+}
+
+/*============================
+KALENDER SIKLUS
+============================*/
+
+#calendarSection table{
+
+table-layout:fixed;
+
+}
+
+#calendarSection td{
+
+height:75px;
+
+vertical-align:middle;
+
+font-weight:600;
+
+}
+
+.calendar-menstruation{
+
+background:#dc3545;
+
+color:white;
+
+border-radius:10px;
+
+}
+
+.calendar-fertile{
+
+background:#198754;
+
+color:white;
+
+border-radius:10px;
+
+}
+
+.calendar-ovulation{
+
+background:#ffc107;
+
+font-weight:bold;
+
+border-radius:10px;
+
+}
+
+#calendarTitle{
+
+font-weight:700;
+
+color:#163A5F;
+
+}
+
+.navbar-brand{
+    color:#163A5F !important;
+    font-weight:700;
+}
+
+.navbar-brand:hover{
+    color:#F28C28 !important;
+}
+
+/*============================
+HALAMAN TENTANG
+============================*/
+
+.tech-card i{
+
+transition:.3s;
+
+}
+
+.tech-card:hover i{
+
+transform:scale(1.15);
+
+}
+
+.feature-box{
+
+border-radius:20px;
+
+}
+
+.feature-box p{
+
+line-height:1.8;
+
+}
+
+.section-subtitle{
+
+max-width:700px;
+
+margin:auto;
+
+}
+
+/*=================================
+ABOUT HERO
+==================================*/
+
+.hero-about{
+
+padding:150px 0 120px;
+
+background:linear-gradient(135deg,#F48FB1,#F8BBD0);
+
+color:#fff;
+
+overflow:hidden;
+
+}
+
+.hero-image{
+
+max-width:480px;
+
+animation:float 4s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+}
+
+.section-label{
+
+display:inline-block;
+
+padding:8px 18px;
+
+background:#FFE8EF;
+
+color:#d16488;
+
+border-radius:30px;
+
+font-weight:600;
+
+margin-bottom:15px;
+
+}
+
+.mini-card{
+
+background:#fff;
+
+border-radius:18px;
+
+padding:18px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.mini-card i{
+
+color:#E91E63;
+
+margin-right:10px;
+
+}
+
+.mini-card:hover{
+
+transform:translateY(-6px);
+
+}
+
+/*=================================
+WHY HerTeen
+==================================*/
+
+.why-herteen{
+
+background:#FFF7FA;
+
+}
+
+.about-card{
+
+background:#fff;
+
+padding:35px 30px;
+
+border-radius:24px;
+
+text-align:center;
+
+height:100%;
+
+transition:.35s;
+
+box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+
+.about-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 40px rgba(0,0,0,.12);
+
+}
+
+.about-icon{
+
+width:80px;
+
+height:80px;
+
+margin:auto;
+
+margin-bottom:20px;
+
+border-radius:50%;
+
+background:#FFE4EC;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:34px;
+
+color:#E91E63;
+
+}
+
+.about-card h4{
+
+font-weight:700;
+
+margin-bottom:15px;
+
+color:#163A5F;
+
+}
+
+.about-card p{
+
+margin-bottom:0;
+
+line-height:1.8;
+
+color:#666;
+
+}
+
+/*=================================
+FINAL ABOUT
+==================================*/
+
+.goal-card{
+
+background:#FFF6F9;
+
+padding:45px;
+
+border-radius:30px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.goal-icon{
+
+width:100px;
+
+height:100px;
+
+background:#FFE4EC;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:42px;
+
+color:#b0627c;
+
+margin:auto;
+
+}
+
+.developer-card{
+
+background:#fff;
+
+padding:40px;
+
+border-radius:30px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.developer-photo{
+
+.developer-photo{
+    width:220px;
+}
+
+border-radius:50%;
+
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.reference-card{
+
+background:#fff;
+
+padding:30px;
+
+border-radius:20px;
+
+text-align:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.3s;
+
+height:100%;
+
+}
+
+.reference-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.closing-card{
+
+background:linear-gradient(135deg,#F48FB1,#F8BBD0);
+
+color:#fff;
+
+padding:60px;
+
+border-radius:35px;
+
+text-align:center;
+
+}
+
+.closing-card .btn{
+
+border-radius:50px;
+
+padding:14px 36px;
+
+}
+
+/*==================================
+DEVELOPER
+===================================*/
+
+.developer-section{
+
+background:#FFF8FB;
+
+}
+
+.developer-card{
+
+background:#ffffff;
+
+padding:50px;
+
+border-radius:30px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.developer-image{
+
+width:100%;
+
+max-width:650px;
+
+height:auto;
+
+display:block;
+
+margin:auto;
+
+}
+
+.member-card{
+
+background:#FFE8EF;
+
+padding:14px;
+
+border-radius:15px;
+
+font-weight:600;
+
+transition:.3s;
+
+color:#163A5F;
+
+}
+
+.member-card:hover{
+
+background:#F8BBD0;
+
+transform:translateY(-5px);
+
+}
+
+.developer-card h3{
+
+font-weight:700;
+
+color:#163A5F;
+
+}
+
+.developer-card hr{
+
+opacity:.15;
+
+}
+
+.developer-info{
+    text-align:center;
+    margin-top:30px;
+}
+
+.developer-info h3{
+    color:#163A5F;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.developer-major{
+    font-size:18px;
+    color:#555;
+    margin-bottom:5px;
+}
+
+.developer-campus{
+    font-size:17px;
+    color:#777;
+    margin-bottom:20px;
+}
+
+.campus-logo{
+    width:180px;
+    max-width:100%;
+    height:auto;
+    display:block;
+    margin:0 auto;
+}
